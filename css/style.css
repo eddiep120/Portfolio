@@ -1,0 +1,152 @@
+/* I'm about to add this to github! */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Basic', sans-serif;
+}
+
+/* Navbar */
+#navbar {
+  height: 50px;
+  background: #F2F2F2;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#navbar a {
+  
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px
+}
+.nav-wrapper{
+ float: right;
+ text-align: center; 
+ padding: 10px 20px;
+}
+
+/* Welcome area */
+#welcome-section{
+  width:100vw;
+  min-height: 100vh;
+  background: #F2F2F2;
+}
+.welcome-content {
+  height: 20vh;
+  padding: 40vh 0;
+}
+
+/* Projects */
+#projects {
+  background: #b3ecff;
+  min-height: 100vh;
+  padding-bottom: 45px;
+}
+
+#projects a img{
+  height: auto;
+  max-width: 300px;
+  
+}
+.project-tile {
+  text-decoration: none;
+  color: black;
+  background: #F2F2F2;
+  display: inline-block;
+  margin: 20px;
+  padding-bottom: 5px;
+}
+
+/* Contact area */
+#contact-info {
+  background: #b3ffb3;
+  width: 100vw;
+  min-height: 100vh;
+  
+}
+
+#contact-info a {
+  display: inline-block;
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  background: #F2F2F2;
+  border-radius: 50%;
+  font-size: 100px;
+  margin: 20px;
+}
+i{
+  padding: 20px 25px;
+}
+.fa-facebook-square {
+  color: #3B5998;
+}
+.fa-twitter-square {
+  color: #1DA1F2;
+}
+.fa-github-square {
+  color: #333333;
+}
+.fa-envelope-square {
+  color: #DB483B;
+}
+/* Main */
+main{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+h1 {
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  font-size: 30px;
+  margin: 0;
+  padding: 50px 0 30px 0;
+  
+}
+.section-title {
+  margin: 0;
+  padding: 75px 0 30px 0;
+}
+p{
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+/*smaller screens */
+@media (max-width: 720px) {
+  #navbar {
+    text-align: center;
+  }
+  .nav-wrapper{
+    float: none;
+  }
+}
+@media (max-width: 350px){
+   #navbar {
+     display: flex;
+     height: auto;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     
+  }
+  .nav-wrapper{
+    display: flex;
+     flex-direction: column;
+    
+    float: none;
+  }
+  #navbar a {
+    padding-top: 10px;
+    align-self: space-between;
+  }
+}
